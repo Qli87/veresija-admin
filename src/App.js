@@ -1,26 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/index.css'
+import { BrowserRouter as Router, Route} from 'react-router-dom'
+import PageRouting from './PageRouting';
+import PrivateRoute from './components/PrivateRoute';
+import LoginContainer from './containers/LoginContainer';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+          <Route path="/login" component={LoginContainer} />
+          <PrivateRoute path='/pocetna' component={PageRouting} />
+          <PrivateRoute path='/listaKorisnika' component={PageRouting} />
+          <PrivateRoute path='/neaktivniKorisnici' component={PageRouting} />
+          <PrivateRoute path='/dodajKorisnika' component={PageRouting} />
+          <PrivateRoute path='/istekleLicence' component={PageRouting} />
+          <PrivateRoute path='/isticuUskoro' component={PageRouting} />
+      </Router>
     );
   }
 }

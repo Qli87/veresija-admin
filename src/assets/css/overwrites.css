@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(241, 241, 241) !important;
+    /* font-family: cursive; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  .activeClassPagination {
+    background-color: #c5e3ed; color:purple !important; text-decoration:none;
+    border-radius: 9px;
+  }

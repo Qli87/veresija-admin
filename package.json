@@ -3,9 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "material-icons-react": "^1.0.4",
+    "moment": "^2.24.0",
     "react": "^16.8.4",
+    "react-axios": "^2.0.3",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-images-upload": "^1.2.6",
+    "react-js-pagination": "^3.0.2",
+    "react-live-clock": "^3.1.0",
+    "react-localize-redux": "^3.5.2",
+    "react-redux": "^6.0.1",
+    "react-responsive-modal": "^3.6.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.0",
+    "react-select": "^2.4.2",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
