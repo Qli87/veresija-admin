@@ -9,7 +9,7 @@ export function api_getAdmins() {
 }
 
 export function api_getTranslations() {
-    return axios.get('http://www.mocky.io/v2/5ce1527c32000008212f62cb');
+    return axios.get('http://www.mocky.io/v2/5cee691f30000095786e9b75');
     // return axios.get('http://www.mocky.io/v2/5cd40a2a35000089007a52ab');
 }
 

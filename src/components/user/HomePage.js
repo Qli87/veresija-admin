@@ -16,7 +16,6 @@ class HomePage extends React.Component {
     }
 
     render() {
-        console.log(this.props)
         return(
             <div className="container-fluid">
 
@@ -28,9 +27,8 @@ class HomePage extends React.Component {
                                 <div className="card-icon">
                                     <i className="material-icons">person_outline</i>
                                 </div>
-                                <p className="card-category">Korisnici:</p>
-                                <h6 className="card-title">250
-                                </h6>
+                                    <Translate id="usersHP">Korisnici</Translate>
+                                    <h6 className="card-title">250</h6>
                             </div>
                             <div className="card-footer">
                                 <div className="stats">
@@ -49,7 +47,7 @@ class HomePage extends React.Component {
                                 <div className="card-icon">
                                     <i className="material-icons">person_outline</i>
                                 </div>
-                                <p className="card-category">Aktivni korisnici</p>
+                                <Translate id="activeUsersHP"></Translate>
                                 <h6 className="card-title">55
                                 </h6>
                             </div>
@@ -70,7 +68,7 @@ class HomePage extends React.Component {
                                 <div className="card-icon">
                                     <i className="material-icons">person_outline</i>
                                 </div>
-                                <p className="card-category">Istekle licence:</p>
+                                <Translate id="licenceExpiredHP"></Translate>
                                 <h6 className="card-title">10</h6>
                             </div>
                             <div className="card-footer">
