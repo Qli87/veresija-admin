@@ -77,7 +77,7 @@ class UserAdd extends React.Component {
                             <div className="card-body" >
                                 {/* <form className="form"> */}
                                     <div className="row">
-                                        <div className="col-lg-6 col-md-5 col-sm-6">
+                                        <div className="col-lg-4 col-md-5 col-sm-6">
                                             <div className="form-group">
                                                 <label className="bmd-label-floating">
                                                     <Translate id="name">Ime</Translate>
@@ -90,7 +90,7 @@ class UserAdd extends React.Component {
                                             </div>
                                         </div>
                                         
-                                        <div className="col-lg-6 col-md-5 col-sm-6">
+                                        <div className="col-lg-4 col-md-5 col-sm-6">
                                             <div className="form-group">
                                                 <label className="bmd-label-floating">
                                                     <Translate id="address"></Translate>
@@ -101,11 +101,8 @@ class UserAdd extends React.Component {
                                                 required />
                                             </div>  
                                         </div>
-                                    </div>
 
-                                    <div className="row" style={{'paddingBottom':'60px'}}>
-
-                                        <div className="col-lg-6 col-md-5 col-sm-6">
+                                        <div className="col-lg-4 col-md-5 col-sm-6">
                                             <div className="form-group">
                                                 <label className="bmd-label-floating">
                                                     <Translate id="to">Do</Translate>
@@ -116,9 +113,24 @@ class UserAdd extends React.Component {
                                                 required/>
                                             </div>  
                                         </div>
+                                    </div>
+
+                                    <div className="row" >
+
+                                        {/* <div className="col-lg-6 col-md-5 col-sm-6">
+                                            <div className="form-group">
+                                                <label className="bmd-label-floating">
+                                                    <Translate id="to">Do</Translate>
+                                                </label>
+                                                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" className="form-control" style={{'border': '0px'}} 
+                                                value={this.state.end_with}
+                                                onChange={this.handleChangeEndWith}
+                                                required/>
+                                            </div>  
+                                        </div> */}
 
                                         <div className="col-lg-6 offset-4">
-                                            <div className="form-group" style={{'marginTop':'-66px'}}>
+                                            <div className="form-group" >
                                                 <ImageUploader
                                                     withPreview={true}
                                                     withIcon={true}
