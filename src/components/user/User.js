@@ -29,7 +29,7 @@ class User extends React.Component {
                         <div>
                             <button type="button" rel="tooltip" 
                                 onClick={() => this.props.renewUserLicence(this.props.user_id)}
-                                title="Produzi licencu" 
+                                title="Produzi licencu?" 
                                 className="btn btn-success btn-link btn-sm" style={{'border': '0'}}>
                             <i className="material-icons">access_time</i>
                             </button>
